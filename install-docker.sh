@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# remove yourself
+rm $0
+
 sudo apt update
 
 # install prerequisites
@@ -13,8 +16,8 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 # apt-update runs automatically after add-apt-repository since Ubuntu 18
 
-# install docker
-sudo apt install -y docker-ce
+# install docker and docker-compose
+sudo apt install -y docker-ce docker-compose
 
 # add current user to docker
 sudo usermod -aG docker ${USER}
@@ -24,9 +27,6 @@ echo
 sudo docker -v
 echo
 echo '"docker" is now on the path'
-
-# remove yourself
-rm $0
 
 # apply the group modification (this has to be the last thing in the script)
 echo
