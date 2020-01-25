@@ -2,5 +2,5 @@
 
 ```bash
 wget -q https://script.install.devinsideyou.com/docker
-chmod +x docker && sudo ./docker
+sudo chmod +x docker && ./docker
 ```
