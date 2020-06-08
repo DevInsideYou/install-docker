@@ -1,4 +1,4 @@
-# Installs [docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/) on [Ubuntu](https://www.ubuntu.com/)
+# Installs [docker](https://www.docker.com/) on [Ubuntu](https://www.ubuntu.com/)
 
 ```bash
 wget -q https://script.install.devinsideyou.com/docker

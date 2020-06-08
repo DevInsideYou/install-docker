@@ -16,8 +16,8 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 # apt-update runs automatically after add-apt-repository since Ubuntu 18
 
-# install docker and docker-compose
-sudo apt install -y docker-ce docker-compose
+# install docker
+sudo apt install -y docker-ce
 
 # add current user to docker
 sudo usermod -aG docker ${USER}
