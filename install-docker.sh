@@ -32,4 +32,4 @@ echo '"docker" is now on the path'
 echo
 echo "Switching current user to yourself: ${USER} to apply the group modification (Current user: ${USER} was added to the docker group so that you can run docker without sudo). If you enter the wrong password simply run 'su -u ${USER}' without the single quotes."
 
-su - ${USER}
+exec su -l $USER
