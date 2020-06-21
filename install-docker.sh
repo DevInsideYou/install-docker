@@ -28,8 +28,5 @@ sudo docker -v
 echo
 echo '"docker" is now on the path'
 
-# apply the group modification (this has to be the last thing in the script)
 echo
-echo "Switching current user to yourself: ${USER} to apply the group modification (Current user: ${USER} was added to the docker group so that you can run docker without sudo). If you enter the wrong password simply run 'su -u ${USER}' without the single quotes."
-
-exec su -l $USER
+echo "You were added to the 'docker' group so that you can run docker without 'sudo'. However the changes to the group are not yet applied. Run 'exec su -l $USER' without the single quotes OR logout and log back in to apply the changes to the group."
